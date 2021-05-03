@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "[+] Installing Sublist3r"
-cd 
+
 mkdir tools
 cd tools
 git clone https://github.com/aboul3la/Sublist3r.git >/dev/null 2>&1
@@ -15,7 +15,7 @@ cd $HOME/tools
 echo "[+]Installing findomain"
 wget https://github.com/Edu4rdSHL/findomain/releases/latest/download/findomain-linux /dev/null 2>&1
 chmod +x findomain-linux
-cp findomain-linux /usr/local/bin
+cp findomain-linux /usr/local/bin/
 
 #######################
 cd 
