@@ -31,7 +31,7 @@ echo "[✔️]subfinder DONE! - $(wc -l subfinder.txt|cut -f 1 -d " ") Domains"
 
 #sublist3r
 touch sublister.txt
-python3  /home/tapi/tools/Sublist3r/sublist3r.py -d $url -o sublister.txt >/dev/null 2>&1
+python3  $HOME/tools/Sublist3r/sublist3r.py -d $url -o sublister.txt >/dev/null 2>&1
 echo "[✔️]sublist3r DONE! - $(wc -l sublister.txt|cut -f 1 -d " ") Domains"
 
 echo "[🥂]Subdomain Enum Completed !!!"
