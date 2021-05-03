@@ -21,3 +21,6 @@ sudo ./intall_tools.sh
 ```
 ./sub3num <target_domain>
 ```
+
+## Demo
+ <img src="demo.png" alt="sub3num" width="200px"></a>
