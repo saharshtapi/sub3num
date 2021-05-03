@@ -34,6 +34,11 @@ echo "[✔️]subfinder DONE! - $(wc -l subfinder.txt|cut -f 1 -d " ") Domains"
 # python3  $HOME/tools/Sublist3r/sublist3r.py -d $url -o sublister.txt >/dev/null 2>&1
 # echo "[✔️]sublist3r DONE! - $(wc -l sublister.txt|cut -f 1 -d " ") Domains"
 
+#Amass
+touch amass.txt
+amass enum -d $url -o amass.txt
+echo "[✔️]Amass Done! - $(wc -l amass.txt|cut -f 1 -d " ") Domains"
+
 echo "[🥂]Subdomain Enum Completed !!!"
 ##########################################################################
 
