@@ -23,4 +23,4 @@ sudo ./intall_tools.sh
 ```
 
 ## Demo
- <img src="demo.png" alt="sub3num" width="200px"></a>
+ <img src="Demo.png" alt="sub3num" width="200px"></a>
