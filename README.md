@@ -14,7 +14,7 @@ A tool that automates subdomain enumeration by running various tools and combini
 git clone https://github.com/saharshtapi/sub3num.git
 cd sub3num
 chmod +x *.sh
-sudo ./intall_tools.sh
+./intall_tools.sh
 ```
 
 ## Usage 
