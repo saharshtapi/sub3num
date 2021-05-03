@@ -27,26 +27,37 @@ cd
 
 echo "[+]Installing Assetfinder"
 go get -u github.com/tomnomnom/assetfinder >/dev/null 2>&1
-cd $HOME/go/src/github.com/tomnomnom/assetfinder/
-go build
-cp assetfinder /usr/local/bin
+cd $HOME/go/src/github.com/tomnomnom/assetfinder/>/dev/null 2>&1
+go build>/dev/null 2>&1
+cp assetfinder /usr/local/bin >/dev/null 2>&1
 
 #####################
 cd
 
 echo "[+]Installing subfinder"
 go get -v -u github.com/projectdiscovery/subfinder/v2/cmd/subfinder >/dev/null 2>&1
-cd $HOME/go/src/github.com/projectdiscovery/subfinder/v2/cmd/subfinder/
-go build
-cp subfinder /usr/local/bin
+cd $HOME/go/src/github.com/projectdiscovery/subfinder/v2/cmd/subfinder/>/dev/null 2>&1
+go build >/dev/null 2>&1
+cp subfinder /usr/local/bin >/dev/null 2>&1
 
 ############################
 cd
 
 echo "[+]Installing httprobe"
 go get -u github.com/tomnomnom/httprobe >/dev/null 2>&1
-cd $HOME/go/src/github.com/tomnomnom/httprobe/
-go build
-cp httprobe /usr/local/bin
+cd $HOME/go/src/github.com/tomnomnom/httprobe/ >/dev/null 2>&1
+go build >/dev/null 2>&1
+cp httprobe /usr/local/bin >/dev/null 2>&1
+################################
+cd 
+
+echo "[+]Installing Amass (Might take some time).."
+go get -v -u github.com/OWASP/Amass/cmd/amass >/dev/null 2>&1
+
+cd $HOME/go/src/github.com/OWASP/Amass/cmd/amass>/dev/null 2>&1
+go build>/dev/null 2>&!
+cp amass /usr/local/bin >/dev/null 2>&1
+
+
 
 echo "[🥂]Instalation Completed!!"
