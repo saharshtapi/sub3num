@@ -10,10 +10,8 @@ A tool that automates subdomain enumeration by running various tools and combini
   * [httprobe](https://github.com/tomnomnom/httprobe)
 
 ## Installation 
-```
-git clone https://github.com/saharshtapi/sub3num.git
+> git clone https://github.com/saharshtapi/sub3num.git
 
-```
 
 ## Usage 
 ```
