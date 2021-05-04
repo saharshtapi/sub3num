@@ -8,7 +8,8 @@ if [ ! -d "$url/subdomanins" ];then
 	mkdir $url/subdomanins
 fi
 
-
+RED="\033[1;31m"
+RESET="\033[0m"
 
 #####################################################################
 echo "[🚀] Finding Subdomains..."
@@ -40,9 +41,10 @@ echo "[✔️]sublist3r DONE! - $(wc -l sublister.txt|cut -f 1 -d " ") Domains"
 
 #Amass
 touch amass.txt
-amass enum -d $url -o amass.txt
-echo "[✔️]Amass Done! - $(wc -l amass.txt|cut -f 1 -d " ") Domains"
-
+echo -n "[➕]Amass Started${RED}..........might take some time .......${RESET}"
+amass enum -d $url -o amass.txt >/dev/null 2>&1
+echo -n "[✔️]Amass Done! - $(wc -l amass.txt|cut -f 1 -d " ") Domains"
+echo " "
 echo "[🥂]Subdomain Enum Completed !!!"
 ##########################################################################
 
