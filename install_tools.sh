@@ -55,7 +55,7 @@ echo "[+]Installing Amass (Might take some time).."
 #go get -v -u github.com/OWASP/Amass/cmd/amass 
 go get -v github.com/OWASP/Amass/v3/... >/dev/null 2>&1
 cd $HOME/go/src/github.com/OWASP/Amass/cmd/amass>/dev/null 2>&1
-go build
+go build >/dev/null 2>&1
 cp amass /usr/local/bin >/dev/null 2>&1
 
 
