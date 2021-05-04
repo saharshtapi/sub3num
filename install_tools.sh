@@ -14,7 +14,7 @@ sudo pip3 install -r requirements.txt >/dev/null 2>&1
 
 echo "[+]Installing findomain"
 wget https://github.com/Edu4rdSHL/findomain/releases/latest/download/findomain-linux /dev/null 2>&1
-chmod +x findomain-linux
+chmod +x findomain-linux.sh
 cp findomain-linux /usr/local/bin/
 
 #######################
