@@ -9,13 +9,13 @@ echo "[+]Getting update.."
 sudo apt update >/dev/null 2>&1
 sudo apt install python3 python3-pip >/dev/null 2>&1
 echo "[+]Installing requirements"
-pip3 install -r Sublist3r/requirements.txt 
+pip3 install -r Sublist3r/requirements.txt >/dev/null 2>&1
 ##################
 
 echo "[+]Installing findomain"
-wget https://github.com/Edu4rdSHL/findomain/releases/latest/download/findomain-linux /dev/null 2>&1
+wget https://github.com/Edu4rdSHL/findomain/releases/latest/download/findomain-linux >/dev/null 2>&1
 chmod +x findomain-linux
-cp findomain-linux /usr/local/bin/
+cp findomain-linux /usr/local/bin/ >/dev/null 2>&1
 
 #######################
 cd 
@@ -52,7 +52,7 @@ cp httprobe /usr/local/bin >/dev/null 2>&1
 cd 
 
 echo "[+]Installing Amass (Might take some time).."
-go get -v -u github.com/OWASP/Amass/cmd/amass >/dev/null 2>&1
+go get -v -u github.com/OWASP/Amass/cmd/amass 
 
 cd $HOME/go/src/github.com/OWASP/Amass/cmd/amass>/dev/null 2>&1
 go build>/dev/null 2>&!
