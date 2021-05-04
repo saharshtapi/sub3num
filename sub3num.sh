@@ -57,6 +57,7 @@ sort -u merged >> unique
 echo "[🏁]Final Alive Check.."
 touch final
 cat unique | sort -u|httprobe -s -p https:443 > final
+cat unique | sort -u|httprobe -s -p https:443 > final
 echo -n -e "\e[1;36m All Subdomains are stored in: $(pwd)/final\e[0m"
 echo -n -e "\e[1;32m - [$(wc -l final |cut -f 1 -d " ") Domains]\e[0m"
 echo " "
