@@ -1,6 +1,6 @@
 #!/bin/bash
 cur=$(pwd)
-echo "[+] Installing Sublist3r"
+echo "[+]Installing Sublist3r"
 
 mkdir tools
 cd tools
@@ -52,10 +52,10 @@ cp httprobe /usr/local/bin >/dev/null 2>&1
 cd 
 
 echo "[+]Installing Amass (Might take some time).."
-go get -v -u github.com/OWASP/Amass/cmd/amass 
-
+#go get -v -u github.com/OWASP/Amass/cmd/amass 
+go get -v github.com/OWASP/Amass/v3/...
 cd $HOME/go/src/github.com/OWASP/Amass/cmd/amass>/dev/null 2>&1
-go build>/dev/null 2>&!
+go build
 cp amass /usr/local/bin >/dev/null 2>&1
 
 
