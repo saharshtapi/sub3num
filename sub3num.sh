@@ -21,9 +21,11 @@ cat assetfinder.txt | grep $1 >> assetfinder.txt
 echo "[✔️]Assetfinder DONE! - $(wc -l assetfinder.txt|cut -f 1 -d " ") Domains"
 
 #findomain
-bash $cur/tools/findomain-linux -t $url -o >/dev/null
-mv $url.txt findomain.txt
+cd $cur/tools
+./findomain-linux -t $url -o >/dev/null
+mv $url.txt $cur/$url/subdomanins/findomain.txt
 echo "[✔️]findomain DONE! - $(wc -l findomain.txt|cut -f 1 -d " ") Domains"
+cd $cur/$url/subdomanins
 
 #subfinder
 touch subfinder.txt
