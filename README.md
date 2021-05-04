@@ -12,8 +12,7 @@ A tool that automates subdomain enumeration by running various tools and combini
 
 ## Installation 
 
-### Install Go
-https://www.digitalocean.com/community/tutorial_collections/how-to-install-go
+Install Go: https://www.digitalocean.com/community/tutorial_collections/how-to-install-go
 
 ```
 git clone https://github.com/saharshtapi/sub3num.git
