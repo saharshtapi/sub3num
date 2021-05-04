@@ -17,7 +17,7 @@ Install Go:
 1. https://www.digitalocean.com/community/tutorial_collections/how-to-install-go
 2. sudo apt install golang-go
 ```
-Install sub3num
+Install sub3num:
 ```
 git clone https://github.com/saharshtapi/sub3num.git
 cd sub3num
