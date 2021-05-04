@@ -7,7 +7,7 @@ fi
 
 cd tools
 git clone https://github.com/aboul3la/Sublist3r.git >/dev/null 2>&1
-echo "[+]Getting update.."
+#echo "[+]Getting update.."
 #sudo apt update >/dev/null 2>&1
 sudo apt install python3 python3-pip >/dev/null 2>&1
 echo "[+]Installing requirements"
