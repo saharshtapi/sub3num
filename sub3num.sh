@@ -1,5 +1,6 @@
 #!/bin/bash	
 url=$1
+cur=$(pwd)
 if [ ! -d "$url" ];then
 	mkdir $url
 fi
@@ -11,7 +12,7 @@ fi
 
 #####################################################################
 echo "[🚀] Finding Subdomains..."
-cd $url/subdomanins
+cd $cur/$url/subdomanins
 
 #Assetfinder
 touch assetfinder.txt
@@ -20,9 +21,9 @@ cat assetfinder.txt | grep $1 >> assetfinder.txt
 echo "[✔️]Assetfinder DONE! - $(wc -l assetfinder.txt|cut -f 1 -d " ") Domains"
 
 #findomain
-# findomain-linux -t $url -o >/dev/null
-# mv $url.txt findomain.txt
-# echo "[✔️]findomain DONE! - $(wc -l findomain.txt|cut -f 1 -d " ") Domains"
+bash $cur/tools/findomain-linux -t $url -o >/dev/null
+mv $url.txt findomain.txt
+echo "[✔️]findomain DONE! - $(wc -l findomain.txt|cut -f 1 -d " ") Domains"
 
 #subfinder
 touch subfinder.txt
@@ -30,9 +31,9 @@ subfinder -d $url -o subfinder.txt >/dev/null 2>&1
 echo "[✔️]subfinder DONE! - $(wc -l subfinder.txt|cut -f 1 -d " ") Domains"
 
 #sublist3r
-# touch sublister.txt
-# python3  $HOME/tools/Sublist3r/sublist3r.py -d $url -o sublister.txt >/dev/null 2>&1
-# echo "[✔️]sublist3r DONE! - $(wc -l sublister.txt|cut -f 1 -d " ") Domains"
+touch sublister.txt
+python3  $cur/tools/Sublist3r/sublist3r.py -d $url -o sublister.txt >/dev/null 2>&1
+echo "[✔️]sublist3r DONE! - $(wc -l sublister.txt|cut -f 1 -d " ") Domains"
 
 #Amass
 touch amass.txt
