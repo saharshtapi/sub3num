@@ -7,6 +7,7 @@ A tool that automates subdomain enumeration by running various tools and combini
   * [Assetfinder](https://github.com/tomnomnom/assetfinder)
   * [Subfinder](https://github.com/projectdiscovery/subfinder)
   * [findomain](https://github.com/Findomain/Findomain)
+  * [Amass](https://github.com/OWASP/Amass)
   * [httprobe](https://github.com/tomnomnom/httprobe)
 
 ## Installation 
