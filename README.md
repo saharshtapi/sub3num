@@ -11,6 +11,10 @@ A tool that automates subdomain enumeration by running various tools and combini
   * [httprobe](https://github.com/tomnomnom/httprobe)
 
 ## Installation 
+
+### Install Go
+https://www.digitalocean.com/community/tutorial_collections/how-to-install-go
+
 ```
 git clone https://github.com/saharshtapi/sub3num.git
 cd sub3num
