@@ -18,7 +18,7 @@ Install Go: https://www.digitalocean.com/community/tutorial_collections/how-to-i
 git clone https://github.com/saharshtapi/sub3num.git
 cd sub3num
 chmod +x *.sh
-./install_tools.sh
+sudo ./install_tools.sh
 ```
 
 ## Usage 
