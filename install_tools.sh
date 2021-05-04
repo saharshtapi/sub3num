@@ -11,7 +11,7 @@ echo "[+]Getting update.."
 sudo apt update 
 sudo apt install python3 python3-pip -y 
 echo "[+]Installing requirements"
-pip3 install -r Sublist3r/requirements.txt >/dev/null 2>&1
+pip3 install -r Sublist3r/requirements.txt 
 ##################
 
 echo "[+]Installing findomain"
