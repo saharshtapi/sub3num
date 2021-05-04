@@ -1,6 +1,6 @@
 # Sub3num
 
-A tool that automates subdomain enumeration by running various tools and combining the results. Fianlly giving all the **alive** sub domains
+A tool that automates subdomain enumeration by running various tools and combining the results. Finally giving all the **alive** subdomains.
 
 * Tools used:
   * [Sublist3r](https://github.com/aboul3la/Sublist3r.git) 
