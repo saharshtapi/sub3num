@@ -1,5 +1,5 @@
 #!/bin/bash
-
+cur=$(pwd)
 echo "[+] Installing Sublist3r"
 
 mkdir tools
@@ -9,12 +9,12 @@ echo "[+]Getting update.."
 sudo apt update >/dev/null 2>&1
 sudo apt install python3 python3-pip >/dev/null 2>&1
 echo "[+]Installing requirements"
-pip3 install -r requirements.txt 
+pip3 install -r Sublist3r/requirements.txt 
 ##################
 
 echo "[+]Installing findomain"
 wget https://github.com/Edu4rdSHL/findomain/releases/latest/download/findomain-linux /dev/null 2>&1
-chmod +x findomain-linux.sh
+chmod +x findomain-linux
 cp findomain-linux /usr/local/bin/
 
 #######################
