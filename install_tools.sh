@@ -20,10 +20,10 @@ chmod +x findomain-linux
 cp findomain-linux /usr/local/bin/ >/dev/null 2>&1
 
 #######################
-cd 
+cd
 
-echo "[+]Installing golang.."
-bash install_go.sh >/dev/null 2>&1
+# echo "[+]Installing golang.."
+# bash install_go.sh >/dev/null 2>&1
 ################
 cd 
 
