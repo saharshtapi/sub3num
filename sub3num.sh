@@ -43,8 +43,8 @@ echo "[✔️]sublist3r DONE! - $(wc -l sublister.txt|cut -f 1 -d " ") Domains"
 touch amass.txt
 echo -n "[➕]Amass Started"
 echo -n -e "${RED}..........might take some time ...Ctrl+C to stop Amass${RESET}"
-echo " "
 amass enum -d $url -o amass.txt >/dev/null 2>&1
+echo " "
 echo  "[✔️]Amass Done! - $(wc -l amass.txt|cut -f 1 -d " ") Domains"
 echo " "
 echo "[🥂]Subdomain Enum Completed !!!"
