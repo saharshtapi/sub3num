@@ -24,8 +24,9 @@ echo "[✔️]Assetfinder DONE! - $(wc -l assetfinder.txt|cut -f 1 -d " ") Domai
 cd $cur/tools
 ./findomain-linux -t $url -o >/dev/null
 mv $url.txt $cur/$url/subdomanins/findomain.txt
-echo "[✔️]findomain DONE! - $(wc -l findomain.txt|cut -f 1 -d " ") Domains"
 cd $cur/$url/subdomanins
+echo "[✔️]findomain DONE! - $(wc -l findomain.txt|cut -f 1 -d " ") Domains"
+
 
 #subfinder
 touch subfinder.txt
