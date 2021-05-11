@@ -69,4 +69,5 @@ read ans
 
 if [ "y" == "$ans"  ];then
 	subjack -w $cur/$url/subdomanins/unique -t 100 -timeout 30 -v  -o stko.txt -ssl
+	subtake  -f $cur/$url/subdomanins/unique -t 100 -timeout 30 -v  -o stko1.txt -ssl
 fi

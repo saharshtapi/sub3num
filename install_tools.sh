@@ -65,6 +65,11 @@ cd
 echo "[+]Installing Subjack"
 go get github.com/haccer/subjack
 
+#########################
+cd
+echo "[+]Installing Subtake"
+go get github.com/jakejarvis/subtake
+
 
 
 echo "[🥂]Instalation Completed!!"
