@@ -60,6 +60,11 @@ cd $HOME/go/src/github.com/OWASP/Amass/cmd/amass>/dev/null 2>&1
 go build >/dev/null 2>&1
 cp amass /usr/local/bin >/dev/null 2>&1
 
+###########################
+cd 
+echo "[+]Installing Subjack"
+go get github.com/haccer/subjack
+
 
 
 echo "[🥂]Instalation Completed!!"
