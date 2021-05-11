@@ -9,6 +9,7 @@ A tool that automates subdomain enumeration by running various tools and combini
   * [findomain](https://github.com/Findomain/Findomain)
   * [Amass](https://github.com/OWASP/Amass)
   * [httprobe](https://github.com/tomnomnom/httprobe)
+  * [subjack](https://github.com/saharshtapi/sub3num)
 
 ## Installation 
 
