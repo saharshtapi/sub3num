@@ -52,7 +52,7 @@ echo -n "[📝]Merge and Sort"
 touch merged
 cat *.txt >merged
 touch unique
-sort -u merged >> unique
+sort -u merged > unique
 echo -n "= $(wc -l unique|cut -f 1 -d " ") Domains"
 echo ""
 echo "[🏁]Final Alive Check.."
